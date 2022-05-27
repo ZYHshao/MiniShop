@@ -1,0 +1,19 @@
+<!--components/cate-table/index.wxml-->
+<view class="container">
+    <view class="left">
+        <view class="left-item {{selectedIndex == index ? 'selected' : ''}}" wx:for="{{items}}" wx:key="index" data-index="{{index}}" bindtap="tapLeftItem">
+            <view class="tip" wx:if="{{selectedIndex == index }}"></view>
+            <text>{{item.name}}</text>
+        </view>
+    </view>
+    <view class="right">
+        <view class="right-bg">
+            <view class="right-title">{{items[selectedIndex].name}}</view>
+            <view class="right-content">
+                <view class="right-item" wx:for="{{items[selectedIndex].cates}}" wx:key="index" data-index="{{index}}" bindtap="tapItem">
+                    <view class="right-item-content">{{item.title}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

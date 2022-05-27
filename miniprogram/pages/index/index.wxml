@@ -1,0 +1,10 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+    <view class="header">
+        <search-bar class="search-bar" title="口袋商城" placeholder="精选好物 打折优惠" bindsearchBtnTap="toSearch"></search-bar>
+        <top-tab-bar bindchangeSelected="changeItem" items="{{categoryData}}"></top-tab-bar>
+    </view>
+    <view class="list">
+        <goods-list items="{{productList}}" bindtapItem="toProductDetail" emptyText="暂无商品上架"></goods-list>
+    </view>
+</view>

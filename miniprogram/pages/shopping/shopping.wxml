@@ -1,0 +1,22 @@
+<!--pages/shopping/shopping.wxml-->
+<view style="background-color: #f1f1f1; overflow: hidden;">
+    <view class="item" wx:for="{{datas}}" wx:key="index" bindtap="goDetail" data-index="{{index}}">
+        <view class="left">
+            <image src="{{item.detail.img}}"></image>
+        </view>
+        <view class="right">
+            <view class="title">{{item.detail.name}}</view>
+            <view class="price">￥{{item.detail.price}}</view>
+            <view class="desc">精品好物，下单即刻拥有</view>
+            <view class="delete" catchtap="delete" data-index="{{index}}">删除</view>
+        </view>
+    </view>
+    <view wx:if="{{datas.length == 0}}" class="empty">
+        <view class="button" bindtap="goHome">去选商品</view>
+        <view class="title">购物车内没有商品，快去添加吧~</view>
+    </view>
+    <view class="bar">
+        <view class="btn" bindtap="toOrder">去结算</view>
+        <view class="total">总计：￥{{total}}</view>
+    </view>
+</view>

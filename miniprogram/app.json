@@ -1,0 +1,42 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/category/category",
+        "pages/shopping/shopping",
+        "pages/user/user",
+        "pages/search/search",
+        "pages/product/product",
+        "pages/orderDetail/orderDetail",
+        "pages/orderList/orderList"
+    ],
+    "tabBar": {
+        "custom": true,
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/category/category",
+                "text": "分类"
+            },
+            {
+                "pagePath": "pages/shopping/shopping",
+                "text": "购物车"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "用户中心"
+            }
+        ]
+    },
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6F6F6",
+        "navigationBarTitleText": "迷你商城",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}

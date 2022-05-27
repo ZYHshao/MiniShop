@@ -1,0 +1,4 @@
+<!--pages/search/search.wxml-->
+<view class="list">
+    <goods-list items="{{productList}}" bindtapItem="toProductDetail" emptyText="暂无商品上架"></goods-list>
+</view>

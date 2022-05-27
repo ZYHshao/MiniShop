@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search-bar":"../../components/search-bar/index",
+    "top-tab-bar":"../../components/top-tab-bar/index",
+    "goods-list":"../../components/goods-list/index"
+  },
+  "navigationStyle": "custom"
+}

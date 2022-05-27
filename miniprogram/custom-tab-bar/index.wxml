@@ -1,0 +1,19 @@
+<!--custom-tab-bar/index.wxml-->
+<view class="tab">
+    <view class="item" bindtap="switchPage" data-index="0">
+        <text class="iconfont icon-shouye icon {{selectedIndex == 0 ? 'selected' : ''}}"></text>
+        <text class="title {{selectedIndex == 0 ? 'selected' : ''}}">首页</text>
+    </view>
+    <view class="item" bindtap="switchPage" data-index="1">
+        <text class="iconfont icon-caipu icon {{selectedIndex == 1 ? 'selected' : ''}}"></text>
+        <text class="title {{selectedIndex == 1 ? 'selected' : ''}}">分类</text>
+    </view>
+    <view class="item" bindtap="switchPage" data-index="2">
+        <text class="iconfont icon-tuangou icon {{selectedIndex == 2 ? 'selected' : ''}}"></text>
+        <text class="title {{selectedIndex == 2 ? 'selected' : ''}}">购物车</text>
+    </view>
+    <view class="item" bindtap="switchPage" data-index="3">
+        <text class="iconfont icon-gerenzhongxin icon {{selectedIndex == 3 ? 'selected' : ''}}"></text>
+        <text class="title {{selectedIndex == 3 ? 'selected' : ''}}">我的</text>
+    </view>
+</view>

@@ -1,0 +1,62 @@
+/* pages/orderList/orderList.wxss */
+
+.card {
+    height: 240px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    background-color: white;
+    margin-left: 5%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 #d1d1d1;
+    overflow: hidden;
+}
+
+.id {
+    font-size: 11px;
+    color: gray;
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 5px;
+    border-bottom: dashed gray 1px;
+}
+
+.title {
+    color: #111111;
+    margin-left: 15px;
+}
+
+.imgs {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+}
+
+.price {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.state {
+    margin-top: 10px;
+    margin-left: 15px;
+    color: gray;
+}
+
+.delete {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    color:white;
+    background-color: red;
+    border-radius: 5px;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}

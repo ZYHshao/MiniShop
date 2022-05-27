@@ -1,0 +1,9 @@
+<!--pages/category/category.wxml-->
+<view class="container">
+    <view class="header">
+        <search-bar class="search-bar" title="口袋商城" placeholder="精选好物 打折优惠" bindsearchBtnTap="toSearch"></search-bar>
+    </view>
+    <view class="content">
+       <cate-table items="{{categorys}}" bindtapItem="toCategoryList"></cate-table>
+    </view>
+</view>

@@ -1,0 +1,12 @@
+<!--components/top-tab-bar/index.wxml-->
+<view>
+    <scroll-view scroll-x="{{true}}" class="scroll" scroll-into-view="{{anchorID}}" scroll-with-animation="{{true}}">
+        <view wx:for="{{items}}" 
+        wx:key="index" 
+        id="{{'id' + index}}"
+        class="item {{currentSelected == index? 'selected': ''}}"
+        bindtap="tapItem" 
+        data-index="{{index}}">{{item.title}}</view>
+    </scroll-view>  
+</view>
+

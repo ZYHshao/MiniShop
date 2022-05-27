@@ -1,0 +1,50 @@
+<!--pages/user/user.wxml-->
+<view>
+    <view class="header">
+        <view class="avatar">
+            <button wx:if="{{userInfo.avatarUrl.length == 0}}" style="width: 60px;height: 60px;" open-type="getUserInfo" bindgetuserinfo="userInfo"></button>
+            <image wx:if="{{userInfo.avatarUrl.length > 0}}" src="{{userInfo.avatarUrl}}"></image>
+        </view>
+        <view class="name">{{userInfo.nickName ? userInfo.nickName : "未登录"}}</view>
+    </view>
+    <view class="banner">
+        <view class="item" bindtap="goOrders" data-index="{{0}}">
+            <text class="iconfont icon-baozhuang i"></text>
+            <text class="t">待付款</text>
+        </view>
+        <view class="item" bindtap="goOrders" data-index="{{1}}">
+            <text class="iconfont icon-tuangouzhong i"></text>
+            <text class="t">待发货</text>
+        </view>
+        <view class="item" bindtap="goOrders" data-index="{{2}}">
+            <text class="iconfont icon-wuliu i"></text>
+            <text class="t">运输中</text>
+        </view>
+        <view class="item" bindtap="goOrders" data-index="{{3}}">
+            <text class="iconfont icon-tuidan i"></text>
+            <text class="t">已退货</text>
+        </view>
+        <view class="item" bindtap="goOrders" data-index="{{-1}}">
+            <text class="iconfont icon-dingdan i"></text>
+            <text class="t">全部订单</text>
+        </view>
+    </view>
+    <view class="list">
+        <view class="list-item">
+            <text>钱包</text>
+            <text class="arrow">></text>
+        </view>
+        <view class="list-item">
+            <text>客服服务</text>
+            <text class="arrow">></text>
+        </view>
+        <view class="list-item">
+            <text>帮助</text>
+            <text class="arrow">></text>
+        </view>
+        <view class="list-item">
+            <text>设置</text>
+            <text class="arrow">></text>
+        </view>
+    </view>
+</view>

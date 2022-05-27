@@ -1,0 +1,35 @@
+<!--pages/orderDetail/orderDetail.wxml-->
+<view class="container">
+    <view class="address">
+        <text class="address-t1">配送地址：</text>
+        <text class="address-t2">{{orderDetail.address ? orderDetail.address : "选择地址"}}</text>
+    </view>
+    <view class="products">
+        <view bindtap="goProduct" class="item" wx:for="{{orderDetail.gArray}}" wx:key="index" data-index="{{index}}">
+            <view class="left">
+                <image src="{{item.img}}"></image>
+            </view>
+            <view class="right">
+                <view class="title">{{item.name}}</view>
+                <view class="price">￥{{item.price}}</view>
+                <view class="discount">折扣：{{item.discount}}</view>
+                <view class="cate">类别：{{item.cname}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="orderInfo">
+        <view class="item">
+            <text class="title">订单金额:</text>
+            <text class="value">￥{{orderDetail.sum}}</text>
+        </view>
+        <view class="item">
+            <text class="title">运费:</text>
+            <text class="value">￥{{orderDetail.freight}}</text>
+        </view>
+        <view class="item">
+            <text class="title">订单状态:</text>
+            <text class="value">{{orderDetail.stateText}}</text>
+        </view>
+    </view>
+    <view class="button" wx:if="{{orderDetail.state == 0}}" bindtap="pay">支付</view>
+</view>

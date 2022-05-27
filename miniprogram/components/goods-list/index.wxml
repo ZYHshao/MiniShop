@@ -1,0 +1,22 @@
+<!--components/goods-list/index.wxml-->
+<view class="container">
+    <view class="row">
+        <view wx:for="{{items}}" wx:key="index" class="item" bindtap="touchItem" data-index="{{index}}">
+            <view class="content">
+                <view class="cover">
+                    <image class="img" src="{{item.img}}"></image>
+                    <text class="tag">{{item.cname}}</text>
+                </view>
+                <view class="text">
+                    <text class="name">{{item.name}}</text>
+                    <text class="discount">{{item.discount}}折</text>
+                </view>
+                <view>
+                    <text class="price">￥{{item.price}}</text>
+                    <text class="saleCount">已售{{item.saleCount}}件</text>
+                </view>
+            </view>
+        </view>
+        <view class="empty" wx:if="{{items.length == 0}}">{{emptyText}}</view>
+    </view>
+</view>

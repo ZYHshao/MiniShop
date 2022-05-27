@@ -1,0 +1,28 @@
+<!--pages/product/product.wxml-->
+<view>
+    <view>
+        <image class="header" src="{{product.img}}" mode="aspectFit"></image>
+    </view>
+    <view>
+        <text class="price">￥{{product.price}}</text>
+        <text class="discount">惊喜折扣：{{product.discount}}折</text>
+    </view>
+    <view class="name">
+        {{product.name}}
+    </view>
+    <view class="content">
+        商品详情
+    </view>
+    <view class="bottom">
+        <view class="button1" bindtap="buy">
+            立即购买
+        </view>
+        <view class="button2" bindtap="addCar">
+            加入购物车
+        </view>
+        <view class="car" bindtap="goCar">
+            <view><text class="iconfont icon-gouwuche icon"></text></view>
+            <view><text class="">购物车</text></view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+<!--components/search-bar/index.wxml-->
+<view class="header">
+    <view class="title"><text>{{title}}</text></view>
+    <view class="searchBar">
+        <text class="iconfont icon-sousuo icon"></text>
+        <input class="input" placeholder="{{placeholder}}" bindinput="input" value="{{value}}"></input>
+        <view class="searchBtn" bindtap="btnTap">搜索</view>
+    </view>
+</view>

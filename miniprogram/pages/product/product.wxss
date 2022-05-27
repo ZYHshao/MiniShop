@@ -1,0 +1,80 @@
+/* pages/product/product.wxss */
+.header {
+    width: 100%;
+    height: 300px;
+}
+
+.price {
+    color: #c61100;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.discount {
+    margin-left: 5px;
+    color: gray;
+}
+
+.name {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+    font-size: 30px;
+}
+
+.bottom {
+    border-top: solid 1px #d1d1d1;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.button1 {
+    margin-right: 20px;
+    background-color: #d33e28;
+    height: 40px;
+    color: white;
+    margin-top: 10px;
+    line-height: 40px;
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.button2 {
+    margin-right: 20px;
+    background-color: #e6cf24;
+    height: 40px;
+    color: white;
+    margin-top: 10px;
+    line-height: 40px;
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.car {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 8px;
+    margin-right: 15px;
+
+}
+
+.icon {
+    font-size: 23px;
+}
+

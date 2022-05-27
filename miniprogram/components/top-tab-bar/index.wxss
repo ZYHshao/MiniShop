@@ -1,0 +1,23 @@
+/* components/top-tab-bar/index.wxss */
+.scroll {
+    height: 40px;
+    width: 100%;
+    white-space: nowrap;
+    padding-left: 10px;
+    
+}
+
+.item {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 20px;
+    color:#e1e1e1;
+    font-size: 15px;
+}
+
+.selected {
+    font-weight: bold;
+    color:white;
+}

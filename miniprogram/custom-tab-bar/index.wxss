@@ -1,0 +1,35 @@
+/* custom-tab-bar/index.wxss */
+@import '../utils/iconFont/iconfont.wxss';
+.tab {
+    height: 49px;
+    width: 100%;
+    background-color: white;
+    border-top: solid 1px #b5afb2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.item {
+    height: 100%;
+    width: 25%;
+    text-align: center;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    font-size: 20px;
+    color: gray;
+}
+
+.title {
+    margin-top: 2px;
+    font-size: 10px;
+    color: gray;
+}
+
+.selected {
+    color: #d63329;
+}
